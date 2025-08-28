@@ -1,62 +1,32 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { SectionContainer } from '@/components/common/SectionContainer';
+import { Header } from '../layout/Header';
+import { SectionLayout } from '../common/SectionLayout';
 
-const backgroundStyles = {
-    gradient: 'bg-gradient-to-r from-blue-50 to-indigo-100',
-    image: 'bg-cover bg-center',
-    solid: 'bg-white'
-};
+export const HeroSection = () => {
+    const data = {
+        mainHeading: "Find Your Path to a Brighter Financial Future",
+        desc: "Fee-Only Wealth Management Firm Serving the California Region",
+        buttonText: "Get Started — Chat with an Advisor"
 
-export const HeroSection = ({ data, className = '' }) => {
+
+    }
     return (
-        <SectionContainer
-            className={`${backgroundStyles[data.backgroundVariant]} ${className}`}
-            variant="default"
-            padding="xl"
-        >
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h1 className="text-5xl font-bold text-gray-900 leading-tight mb-6">
-                        {data.title}
-                    </h1>
-                    <p className="text-xl text-gray-600 mb-8">
-                        {data.subtitle}
-                    </p>
-                    {data.description && (
-                        <p className="text-lg text-gray-600 mb-8">
-                            {data.description}
-                        </p>
-                    )}
-                    <div className="flex flex-col sm:flex-row gap-4">
-                        <Button
-                            size="lg"
-                            className="bg-blue-600 hover:bg-blue-700"
-                        >
-                            <a href={data.primaryCTA.href}>
-                                {data.primaryCTA.text}
-                            </a>
-                        </Button>
-                        {data.secondaryCTA && (
-                            <Button
-                                variant="outline"
-                                size="lg"
-                            >
-                                <a href={data.secondaryCTA.href}>
-                                    {data.secondaryCTA.text}
-                                </a>
-                            </Button>
-                        )}
-                    </div>
-                </div>
-                <div className="flex justify-center">
-                    <img
-                        src={data.heroImage}
-                        alt="Hero Image"
-                        className="rounded-lg shadow-2xl w-full max-w-md"
-                    />
-                </div>
-            </div>
-        </SectionContainer>
+        <div className="relative min-h-screen text-white" style={{
+            backgroundImage: "url(https://asesor.progressionstudios.com/wp-content/uploads/2019/11/slide-1.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+        }}>
+            <Header />
+            <SectionLayout sectionClassName={'h-screen'} leftContainerClassName={'md:w-[32.8125rem]'} data={data} />
+            <svg style={{
+                width: "calc(180% + 1.3px)",
+                height: "150px",
+            }} className='absolute bottom-0 -left-1/2 block rotate-180' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"> <path style={{ transformOrigin: "center" }} className="fill-white rotate-y-0" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+                c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+                c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+            </svg>
+        </div>
     );
 };

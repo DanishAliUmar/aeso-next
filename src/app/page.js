@@ -12,6 +12,7 @@ import { servicesData } from '@/data/services';
 import { testimonialsData } from '@/data/testimonials';
 import { teamData } from '@/data/team';
 import { featuresData } from '@/data/features';
+import AboutSection from '@/components/sections/AboutSection';
 
 const Home = () => {
   // Hero Section Data
@@ -51,36 +52,8 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
-
       <HeroSection data={heroData} />
-
-      <FeaturesSection
-        features={featuresData}
-        variant="light"
-      />
-
-      <TestimonialsSection
-        title="Personal Testimonials"
-        subtitle="Far far away, behind the word mountains, far from the countries Vokalia and Consonant, there live the blind texts. Separated they live in Bookmarks grove right at the coast of the Semantics, a large language ocean."
-        testimonials={testimonialsData}
-        variant="default"
-      />
-
-      <CTASection data={ctaData} />
-
-      <ServicesSection
-        title="What We Do"
-        services={servicesData}
-        variant="light"
-      // onServiceClick={handleServiceClick}
-      />
-
-      <TeamSection
-        title="Meet the Team"
-        team={teamData}
-        variant="light"
-      />
+      <AboutSection />
 
       <Footer />
     </div>
