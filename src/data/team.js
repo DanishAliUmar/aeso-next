@@ -4,7 +4,7 @@ export const teamData = [
         name: 'Sarah Mock',
         role: 'Senior Financial Advisor',
         bio: 'Sarah has over 15 years of experience in financial planning and wealth management.',
-        avatar: '/team/sarah-mock.jpg', // Replace with actual image path
+        avatar: 'https://asesor.progressionstudios.com/wp-content/uploads/2019/11/team-2.jpg', // Replace with actual image path
         socialLinks: {
             linkedin: 'https://linkedin.com/in/sarahmock',
             email: 'sarah@asesor.com'
@@ -15,7 +15,7 @@ export const teamData = [
         name: 'Laura Harris',
         role: 'Investment Specialist',
         bio: 'Laura specializes in retirement planning and investment portfolio management.',
-        avatar: '/team/laura-harris.jpg',
+        avatar: 'https://asesor.progressionstudios.com/wp-content/uploads/2019/11/team-2.jpg',
         socialLinks: {
             linkedin: 'https://linkedin.com/in/lauraharris',
             email: 'laura@asesor.com'
@@ -26,7 +26,7 @@ export const teamData = [
         name: 'Jess Banks',
         role: 'Estate Planning Advisor',
         bio: 'Jess helps families plan for their financial legacy and estate management.',
-        avatar: '/team/jess-banks.jpg',
+        avatar: 'https://asesor.progressionstudios.com/wp-content/uploads/2019/11/team-2.jpg',
         socialLinks: {
             linkedin: 'https://linkedin.com/in/jessbanks',
             email: 'jess@asesor.com'
@@ -37,7 +37,7 @@ export const teamData = [
         name: 'Louisa Watts',
         role: 'Tax Strategist',
         bio: 'Louisa provides comprehensive tax planning and optimization strategies.',
-        avatar: '/team/louisa-watts.jpg',
+        avatar: 'https://asesor.progressionstudios.com/wp-content/uploads/2019/11/team-2.jpg',
         socialLinks: {
             linkedin: 'https://linkedin.com/in/louisawatts',
             email: 'louisa@asesor.com'

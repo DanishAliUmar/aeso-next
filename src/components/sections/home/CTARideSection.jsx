@@ -1,0 +1,26 @@
+import React from 'react';
+import { SectionContainer } from '@/components/common/SectionContainer';
+import { Button } from '../../ui/button';
+
+export const CTARideSection = () => {
+    return (
+        <SectionContainer
+            style={{
+                backgroundImage: "url(https://asesor.progressionstudios.com/wp-content/uploads/2019/11/footer-bg.jpg)",
+                backgroundSize: "cover",
+                backgroundPosition: "center center",
+            }}
+            className={"!text-white"}
+            id="cta-ride"
+        >
+            <div className="space-y-7 md:max-w-[35.625rem]">
+                <div className="space-y-4 pb-4">
+                    <h2 className="text-3xl md:text-5xl leading-[1.2em]">Enjoy
+                        <br />the ride.</h2>
+                </div>
+                <p className="text-[1.375rem] font-medium opacity-90">Let us take the mystery out of financial planning so you can focus on what matters.</p>
+                <div className="flex items-center gap-4"><Button className={''}>Chat with an Advisor</Button><p className="">— Free Consultation</p></div>
+            </div>
+        </SectionContainer>
+    );
+};

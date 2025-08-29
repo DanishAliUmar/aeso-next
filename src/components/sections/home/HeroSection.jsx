@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { SectionContainer } from '@/components/common/SectionContainer';
-import { Header } from '../layout/Header';
-import { SectionLayout } from '../common/SectionLayout';
+import { Header } from '../../layout/Header';
+import { SectionLayout } from '../../common/SectionLayout';
 
 export const HeroSection = () => {
     const data = {

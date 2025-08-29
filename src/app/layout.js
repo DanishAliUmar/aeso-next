@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Footer } from "@/components/layout/Footer";
 
 export const metadata = {
   title: "Aeso App",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         className={`antialiased !font-serif overflow-x-hidden`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );

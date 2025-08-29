@@ -14,7 +14,7 @@ export const SectionLayout = ({ data, sectionClassName, containerClassName, left
                         {data.heading}
                     </h2>}
                     {data.desc && <p className={`text-lg xl:text-xl ${descClassName}`}>{data.desc}</p>}
-                    {data.buttonText && <Button className={`md:text-lg p-4 md:p-6 xl:p-8 font-bold ${btnClassName}`} variant={buttonVariant || "default"}>{data.buttonText}</Button>}
+                    {data.buttonText && <Button className={`${btnClassName}`} variant={buttonVariant || "default"}>{data.buttonText}</Button>}
                 </div>
                 {rightContaineImg &&
                     <div className={`flex-1 flex items-center justify-center p-12 ${rightContainerClassName}`}>

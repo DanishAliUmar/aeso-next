@@ -1,5 +1,5 @@
 import React from 'react'
-import { SectionLayout } from '../common/SectionLayout'
+import { SectionLayout } from '../../common/SectionLayout'
 
 const AboutSection = () => {
     const data = {

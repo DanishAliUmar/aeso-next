@@ -4,12 +4,6 @@ import { Quote } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
 
-
-// id: string;
-//     name: string;
-//     tagLine: string;
-//     content: string;
-//     avatar: string;
 export const TestimonialCard = ({
     testimonial
 }) => {
