@@ -1,42 +1,29 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
 import { SectionContainer } from '@/components/common/SectionContainer';
+import { TestimonialCard } from '@/components/common/TestimonialCard';
+import { Button } from '../ui/button';
 
-export const CTASection = ({ data, className = '' }) => {
-    const backgroundStyle = data.backgroundImage
-        ? { backgroundImage: `url(${data.backgroundImage})` }
-        : {};
-
+export const CTASection = ({
+    testimonials
+}) => {
     return (
         <SectionContainer
-            variant={data.variant}
-            className={className}
-            style={backgroundStyle}
+            style={{
+                backgroundImage: "url(https://asesor.progressionstudios.com/wp-content/uploads/2019/11/home-bg.jpg)",
+                backgroundSize: "cover",
+                backgroundPosition: "center center",
+            }}
+            className={"!text-white"}
+            id="testimonials"
         >
-            <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-4xl font-bold mb-6">
-                    {data.title}
-                </h2>
-                {data.subtitle && (
-                    <p className="text-xl mb-6 opacity-90">
-                        {data.subtitle}
-                    </p>
-                )}
-                <p className="text-lg mb-8 opacity-80">
-                    {data.description}
-                </p>
-                <Button
-                    size="lg"
-                    className={
-                        data.variant === 'dark'
-                            ? "bg-white text-gray-900 hover:bg-gray-100"
-                            : "bg-blue-600 hover:bg-blue-700 text-white"
-                    }
-                >
-                    <a href={data.buttonHref}>
-                        {data.buttonText}
-                    </a>
-                </Button>
+            <div className="space-y-7 md:max-w-[35.625rem]">
+                <div className="space-y-4 pb-4">
+                    <p className="text-xl md:text-2xl font-bold">Why Choose Us</p>
+                    <h2 className="text-3xl md:text-5xl leading-[1.2em]">Fee-Only, Experienced Advisors Committed to Your Goals.</h2>
+                </div>
+                <p className="text-[1.375rem] font-medium opacity-80">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum.</p>
+                <p className="text-[1.375rem] font-medium opacity-80">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. </p>
+                <Button>Chat with an Advisor</Button>
             </div>
         </SectionContainer>
     );

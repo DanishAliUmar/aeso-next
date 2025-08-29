@@ -4,36 +4,22 @@ import { SectionContainer } from '@/components/common/SectionContainer';
 import { ServiceCard } from '@/components/common/ServiceCard';
 
 export const ServicesSection = ({
-    title,
-    subtitle,
     services,
-    variant = 'light',
-    className = '',
-    onServiceClick
 }) => {
     return (
         <SectionContainer
-            variant={variant}
-            className={className}
+            className={"!bg-[#0b0c13] text-white"}
             id="services"
         >
-            <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                    {title}
-                </h2>
-                {subtitle && (
-                    <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                        {subtitle}
-                    </p>
-                )}
+            <div className="space-y-4 pb-10">
+                <p className="text-xl md:text-2xl font-bold">Our Services</p>
+                <h2 className="text-3xl md:text-5xl">What We Do</h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 {services.map((service) => (
                     <ServiceCard
                         key={service.id}
                         service={service}
-                        variant={variant}
-                    // onClick={() => onServiceClick?.(service)}
                     />
                 ))}
             </div>

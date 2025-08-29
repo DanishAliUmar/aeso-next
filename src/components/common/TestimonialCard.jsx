@@ -1,57 +1,29 @@
+// src/components/TestimonialCard.jsx
+
+import { Quote } from 'lucide-react';
+import Image from 'next/image';
 import React from 'react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Star } from 'lucide-react';
 
+
+// id: string;
+//     name: string;
+//     tagLine: string;
+//     content: string;
+//     avatar: string;
 export const TestimonialCard = ({
-    testimonial,
-    className = '',
-    variant = 'default'
+    testimonial
 }) => {
-    const cardClasses = `text-center shadow-lg h-full ${variant === 'dark' ? 'bg-gray-800 border-gray-700 text-white' : ''
-        } ${className}`;
-
     return (
-        <Card className={cardClasses}>
-            <CardContent className="p-8">
-                <div className="mb-6">
-                    <img
-                        src={testimonial.avatar}
-                        alt={testimonial.name}
-                        className="w-20 h-20 rounded-full mx-auto object-cover"
-                    />
+        <div className='relative flex flex-col justify-between gap-10 pt-12 pb-6 px-11 bg-white rounded-lg shadow-md'>
+            <div className="absolute rounded-full size-14 flex items-center justify-center bg-[var(--tertiary)] top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white"><Quote className={'rotate-180'} /></div>
+            <p className="text-[1.375rem] font-medium">{testimonial?.content}</p>
+            <div className="space-y-2">
+                <div className="flex items-center gap-3 border-b border-[var(--tertiary)] pb-2">
+                    <Image width={36} height={36} src={testimonial?.avatar} alt={testimonial?.name} className="size-16 rounded-full object-cover border-2 border-[var(--tertiary)]" />
+                    <h3 className="text-2xl">{testimonial?.name || "----"}</h3>
                 </div>
-
-                <h3 className="text-xl font-semibold mb-2">
-                    {testimonial.name}
-                </h3>
-
-                {testimonial.role && (
-                    <p className={`text-sm mb-4 ${variant === 'dark' ? 'text-gray-400' : 'text-gray-500'
-                        }`}>
-                        {testimonial.role}
-                        {testimonial.company && ` at ${testimonial.company}`}
-                    </p>
-                )}
-
-                {testimonial.rating && (
-                    <div className="flex justify-center mb-4">
-                        {Array.from({ length: 5 }).map((_, i) => (
-                            <Star
-                                key={i}
-                                className={`w-4 h-4 ${i < testimonial.rating
-                                        ? 'text-yellow-400 fill-current'
-                                        : 'text-gray-300'
-                                    }`}
-                            />
-                        ))}
-                    </div>
-                )}
-
-                <blockquote className={`italic ${variant === 'dark' ? 'text-gray-300' : 'text-gray-600'
-                    }`}>
-                    "{testimonial.content}"
-                </blockquote>
-            </CardContent>
-        </Card>
+                <p className="text-lg font-bold text-[var(--tertiary)]">{testimonial?.tagLine}</p>
+            </div>
+        </div>
     );
 };

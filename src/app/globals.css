@@ -4,6 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --bg-tertiary: var(--tertiary);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -59,7 +60,7 @@
   --secondary-foreground: oklch(0.985 0 0);
 
   --tertiary: oklch(50.566% 0.18937 293.579);
-
+  --text-dark: oklch(40.834% 0.02834 285.063);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
