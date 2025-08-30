@@ -155,16 +155,16 @@ export const Header = () => {
                                 <NavigationMenuItem key={item.label}>
                                     {item.subItems ? (
                                         <>
-                                            <NavigationMenuTrigger>{item.label}</NavigationMenuTrigger>
-                                            <NavigationMenuContent>
-                                                <ul className="min-w-[10rem] whitespace-nowrap divide-y divide-gray-200/10 bg-white shadow-md rounded-md overflow-hidden">
+                                            <NavigationMenuTrigger className={'focus:text-white'}><span className="font-bold text-lg focus:text-white">{item.label}</span></NavigationMenuTrigger>
+                                            <NavigationMenuContent className={'bg-transparent'}>
+                                                <ul className="min-w-[10rem] whitespace-nowrap text-white divide-y divide-gray-200/10 bg-[#1e1f26] shadow-md rounded-md overflow-hidden">
                                                     {item.subItems.map((subItem) => (
                                                         <li key={subItem.label}>
-                                                            <NavigationMenuLink className={'p-3 text-gray-700 hover:text-primary transition-colors'} asChild>
-                                                                <Link href={subItem.href}>
-                                                                    <span className="flex items-center gap-2">
-                                                                        <span className="size-1.5 rounded-full bg-primary hidden group-hover:block transition-all duration-200"></span>
-                                                                        <span>{subItem.label}</span>
+                                                            <NavigationMenuLink className={'p-3 hover:text-primary transition-colors'} asChild>
+                                                                <Link href={subItem.href} className="focus:text-white">
+                                                                    <span className="flex items-center gap-2 group">
+                                                                        <span className="size-1.5 rounded-full font-bold text-lg bg-primary transition-all duration-200"></span>
+                                                                        <span className="font-bold text-lg">{subItem.label}</span>
                                                                     </span>
                                                                 </Link>
                                                             </NavigationMenuLink>
@@ -174,8 +174,8 @@ export const Header = () => {
                                             </NavigationMenuContent>
                                         </>
                                     ) : (
-                                        <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                                            <Link className="font-bold text-lg text-white hover:text-primary transition-colors" href={item.href}>{item.label}</Link>
+                                        <NavigationMenuLink className={navigationMenuTriggerStyle()} asChild>
+                                            <Link className="text-white focus:text-white hover:text-primary transition-colors" href={item.href}><span className="font-bold text-lg">{item.label}</span></Link>
                                         </NavigationMenuLink>
                                     )}
                                 </NavigationMenuItem>
