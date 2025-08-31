@@ -12,7 +12,7 @@ import React from 'react'
 const WhoWeAre = () => {
     return (
         <>
-            <HeroSection title={'Investment Firm'} heading={"Who We Are"} />
+            <HeroSection image="/assets/imgs/imgi_19_page-title-2.jpg" title={'Investment Firm'} heading={"Who We Are"} />
             <Partners />
             <SectionContainer>
                 <div className="flex items-center justify-center flex-col text-center gap-5 px-5 md:px-20">

@@ -15,7 +15,7 @@ import { testimonialsData } from '@/data/testimonials'
 const Testimonials = () => {
     return (
         <>
-            <HeroSection title={'Real People with Real Results'} heading={"Testimonials"} />
+            <HeroSection image="/assets/imgs/imgi_17_page-title-3.jpg" title={'Real People with Real Results'} heading={"Testimonials"} />
             <TestimonialsSection testimonials={testimonialsData} />
             <CTARideSection />
             <ContactSection />

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Header } from '../../layout/Header';
 
-export const HeroSection = ({ title, heading }) => {
+export const HeroSection = ({ title, heading, image }) => {
     return (
         <section className="relative text-white" style={{
-            backgroundImage: "url(https://asesor.progressionstudios.com/wp-content/uploads/2019/11/page-title-2.jpg)",
+            backgroundImage: `url(${image})`,
             backgroundSize: "cover",
             backgroundPosition: "center center",
         }}>

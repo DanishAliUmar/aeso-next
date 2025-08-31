@@ -72,7 +72,7 @@ const Contact = () => {
 
     return (
         <>
-            <HeroSection title={'Schedule a Meeting with an Advisor'} heading={"Contact Us"} />
+            <HeroSection image="/assets/imgs/imgi_23_page-title.jpg" title={'Schedule a Meeting with an Advisor'} heading={"Contact Us"} />
             <SectionContainer className=''>
                 <div className="flex flex-col md:flex-row items-center gap-y-10">
                     <div className="md:w-1/2 pr-14 pt-5">
@@ -94,12 +94,12 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="md:w-1/2">
-                        <Image src={'https://asesor.progressionstudios.com/wp-content/uploads/2019/11/about-image.jpg'} width={525} height={410} alt='' className='w-full h-auto object-contain' />
+                        <Image src={'/assets/imgs/imgi_19_about-image.jpg'} width={525} height={410} alt='' className='w-full h-auto object-contain' />
                     </div>
                 </div>
                 <div className="flex flex-col-reverse items-center md:flex-row gap-y-10">
                     <div className="md:w-1/2">
-                        <Image src={'https://asesor.progressionstudios.com/wp-content/uploads/2019/11/about-image.jpg'} width={525} height={410} alt='' className='w-full h-auto object-contain' />
+                        <Image src={'/assets/imgs/imgi_19_about-image.jpg'} width={525} height={410} alt='' className='w-full h-auto object-contain' />
                     </div>
                     <div className="md:w-1/2 space-y-3 md:pl-14 pt-2">
                         <p className={`text-xl xl:text-2xl text-[var(--tertiary)]`}>Southern California</p>
@@ -122,7 +122,7 @@ const Contact = () => {
                 </div>
             </SectionContainer>
             <SectionContainer className='relative z-10 py-24' style={{
-                backgroundImage: "url(https://asesor.progressionstudios.com/wp-content/uploads/2019/11/contact-base.jpg)",
+                backgroundImage: "url(/assets/imgs/imgi_9_contact-base.jpg)",
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
             }}>

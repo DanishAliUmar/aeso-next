@@ -13,7 +13,7 @@ import ContactSection from '@/components/sections/home/ContactSection'
 const OurTeam = () => {
     return (
         <>
-            <HeroSection title={'Dedicated Financial Advisors'} heading={"Our Team"} />
+            <HeroSection image="/assets/imgs/imgi_19_page-title-2.jpg" title={'Dedicated Financial Advisors'} heading={"Our Team"} />
             <TeamSection team={teamData} />
             <CTARideSection />
             <ContactSection />
