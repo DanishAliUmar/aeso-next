@@ -18,7 +18,7 @@ import ContactSection from '@/components/sections/home/ContactSection';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="md:min-h-screen bg-white">
       <HeroSection />
       <AboutSection />
       <FeaturesSection features={featuresData} />

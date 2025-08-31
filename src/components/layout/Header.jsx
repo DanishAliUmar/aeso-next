@@ -26,7 +26,7 @@ const MobileNav = ({ isOpen, onClose, navigationItems }) => {
     };
 
     return (
-        <div className={`fixed inset-0 z-50 transition-all duration-300 ${isOpen ? 'visible' : 'invisible'}`}>
+        <div className={`fixed inset-0 z-50 transition-all duration-300 max-w-screen overflow-x-hidden ${isOpen ? 'visible' : 'invisible'}`}>
             {/* Overlay */}
             <div
                 className={`absolute inset-0 bg-black/50 transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0'}`}
