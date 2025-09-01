@@ -34,12 +34,12 @@ const WhoWeAre = () => {
                             </p>
                         </div>
                         <div className="md:w-1/2">
-                            <Image src={'https://asesor.progressionstudios.com/wp-content/uploads/2019/11/about-image.jpg'} width={525} height={410} alt='' className='w-full h-auto object-contain' />
+                            <Image src={'/assets/imgs/imgi_19_about-image.jpg'} width={525} height={410} alt='' className='w-full h-auto object-contain' />
                         </div>
                     </div>
                     <div className="flex flex-col-reverse md:flex-row gap-y-10 md:gap-2">
                         <div className="md:w-1/2">
-                            <Image src={'https://asesor.progressionstudios.com/wp-content/uploads/2019/11/about-image.jpg'} width={525} height={410} alt='' className='w-full h-auto object-contain' />
+                            <Image src={'/assets/imgs/imgi_19_about-image.jpg'} width={525} height={410} alt='' className='w-full h-auto object-contain' />
                         </div>
                         <div className="md:w-1/2 space-y-3 md:pl-14 pt-2">
                             <h2 className="text-3xl md:text-4xl lg:text-6xl">Building and Preserving Wealth</h2>

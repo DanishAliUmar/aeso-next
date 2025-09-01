@@ -14,7 +14,7 @@ export const HeroSection = () => {
     }
     return (
         <section className="relative min-h-screen text-white" style={{
-            backgroundImage: "url(https://asesor.progressionstudios.com/wp-content/uploads/2019/11/slide-1.jpg)",
+            backgroundImage: "url(/assets/imgs/slide-1.jpg)",
             backgroundSize: "cover",
             backgroundPosition: "center center",
         }}>

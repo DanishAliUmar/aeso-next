@@ -14,7 +14,7 @@ const FinancialServices = () => {
         heading: "Building Personal Relationships",
         desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
         buttonText: "Develop My Financial Picture",
-        img: "https://asesor.progressionstudios.com/wp-content/uploads/2019/11/financial.jpg"
+        img: "./assets/imgs/imgi_17_financial.jpg"
     };
     return (
         <>
@@ -24,7 +24,7 @@ const FinancialServices = () => {
             </SectionContainer>
             <ServicesSection services={servicesData} />
             <section className="relative text-white" style={{
-                backgroundImage: "url(https://asesor.progressionstudios.com/wp-content/uploads/2019/11/finance-bg.jpg)",
+                backgroundImage: "url(./assets/imgs/imgi_15_finance-bg-1024x475.jpg)",
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
             }}>

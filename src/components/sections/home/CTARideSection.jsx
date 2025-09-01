@@ -6,7 +6,7 @@ export const CTARideSection = () => {
     return (
         <SectionContainer
             style={{
-                backgroundImage: "url(https://asesor.progressionstudios.com/wp-content/uploads/2019/11/footer-bg.jpg)",
+                backgroundImage: "url(/assets/imgs/imgi_29_footer-bg.jpg)",
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
             }}

@@ -9,7 +9,7 @@ export const CTASection = ({
     return (
         <SectionContainer
             style={{
-                backgroundImage: "url(https://asesor.progressionstudios.com/wp-content/uploads/2019/11/home-bg.jpg)",
+                backgroundImage: "url(/assets/imgs/home-bg.jpg)",
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
             }}

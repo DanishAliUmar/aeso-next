@@ -12,7 +12,7 @@ const ContactSection = () => {
         >
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-y-10 xl:divide-x divide-slate-300">
                 <Link className='' href={'/'}>
-                    <Image src={'https://asesor.progressionstudios.com/wp-content/themes/aeso-progression/images/logo.png'} width={115} height={100} alt="logo" />
+                    <Image src={'/assets/imgs/logo.png'} width={115} height={100} alt="logo" />
                 </Link>
                 <div className="flex items-center xl:justify-center gap-2">
                     <Phone className="size-4" />

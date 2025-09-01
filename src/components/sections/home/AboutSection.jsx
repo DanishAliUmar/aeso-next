@@ -10,7 +10,7 @@ const AboutSection = () => {
     };
     return (
         <section>
-            <SectionLayout sectionClassName={"py-10"} containerClassName={"flex-col xl:flex-row"} buttonVariant="secondary" descClassName='text-[var(--text-dark)] md:text-[1.375rem] py-3 leading-[1.6]' data={data} leftContainerClassName={'md:pr-12'} rightContaineImg={'https://asesor.progressionstudios.com/wp-content/uploads/2019/11/home-right.jpg'} />
+            <SectionLayout sectionClassName={"py-10"} containerClassName={"flex-col xl:flex-row"} buttonVariant="secondary" descClassName='text-[var(--text-dark)] md:text-[1.375rem] py-3 leading-[1.6]' data={data} leftContainerClassName={'md:pr-12'} rightContaineImg={'/assets/imgs/imgi_2_home-right.jpg'} />
         </section>
     )
 }

@@ -145,7 +145,7 @@ export const Header = () => {
                 {/* Main Navigation Row */}
                 <div className="flex justify-between items-center py-4">
                     <Link href={'/'}>
-                        <Image src={'https://asesor.progressionstudios.com/wp-content/themes/aeso-progression/images/logo.png'} width={115} height={100} alt="logo" />
+                        <Image src={'/assets/imgs/logo.png'} width={115} height={100} alt="logo" />
                     </Link>
 
                     {/* Desktop Navigation */}

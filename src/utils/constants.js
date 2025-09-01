@@ -1,7 +1,7 @@
 export const SITE_CONFIG = {
     name: 'Asesor',
     description: 'Fee-Only Wealth Management Firm Serving the California Region',
-    url: 'https://asesor.com',
+    url: '/',
     ogImage: '/og-image.jpg',
     author: 'Asesor Team',
     keywords: ['financial planning', 'wealth management', 'investment', 'retirement']
