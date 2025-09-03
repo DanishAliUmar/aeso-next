@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export const SectionLayout = ({ data, sectionClassName, containerClassName, leftContainerClassName, rightContaineClassName, rightContainerClassName, rightContaineImg, titleClassName, mainHeadingClassName, headingClassName, descClassName, btnClassName, buttonVariant }) => {
     return (
@@ -14,7 +15,13 @@ export const SectionLayout = ({ data, sectionClassName, containerClassName, left
                         {data.heading}
                     </h2>}
                     {data.desc && <p className={`text-lg xl:text-xl ${descClassName}`}>{data.desc}</p>}
-                    {data.buttonText && <Button className={`${btnClassName}`} variant={buttonVariant || "default"}>{data.buttonText}</Button>}
+                    {data.buttonText &&
+                        <Link href={data.buttonLink ? data.buttonLink : '/contact'}>
+                            <Button className={`${btnClassName}`} variant={buttonVariant || "default"}>
+                                {data.buttonText}
+                            </Button>
+                        </Link>
+                    }
                 </div>
                 {rightContaineImg &&
                     <div className={`flex-1 flex items-center justify-center p-12 ${rightContainerClassName}`}>

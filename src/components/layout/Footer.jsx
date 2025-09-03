@@ -12,21 +12,21 @@ export const Footer = ({
             title: 'Company',
             links: [
                 { label: 'News & Press', href: '/news' },
-                { label: 'Who We Work With', href: '/partners' },
-                { label: 'Our Approach', href: '/approach' },
-                { label: 'Leadership', href: '/leadership' },
+                { label: 'Who We Work With', href: '/who-we-are' },
+                { label: 'Our Approach', href: '/who-we-are' },
+                { label: 'Leadership', href: '/who-we-are' },
                 { label: 'Contact Us', href: '/contact' }
             ]
         },
         {
             title: 'Services',
             links: [
-                { label: 'Financial Planning', href: '/services/financial-planning' },
-                { label: 'Lifestyle', href: '/services/lifestyle' },
-                { label: 'College Planning', href: '/services/college-planning' },
-                { label: 'Retirement', href: '/services/retirement' },
-                { label: 'Estate Management', href: '/services/estate-management' },
-                { label: 'Life Insurance', href: '/services/life-insurance' }
+                { label: 'Financial Planning', href: '/financial-services' },
+                { label: 'Lifestyle', href: '/financial-services' },
+                { label: 'College Planning', href: '/financial-services' },
+                { label: 'Retirement', href: '/financial-services' },
+                { label: 'Estate Management', href: '/financial-services' },
+                { label: 'Life Insurance', href: '/financial-services' }
             ]
         },
         {
@@ -35,12 +35,12 @@ export const Footer = ({
                 {
                     heading: 'Northern California',
                     address: '435 Wandering Ct, Suite 101.\nSonoma, CA 93632',
-                    directionsLink: '#'
+                    directionsLink: '/contact'
                 },
                 {
                     heading: 'Southern California',
                     address: '789 Ocean Drive, Apt 20.\nLos Angeles, CA 90001',
-                    directionsLink: '#'
+                    directionsLink: '/contact'
                 }
             ]
         },
@@ -90,7 +90,7 @@ export const Footer = ({
                                 <div className="space-y-4">
                                     <p className="text-lg md:text-xl font-medium mb-1">{section.description}</p>
                                     <div className="flex space-x-2">
-                                        <Input className="!bg-white outline-0 focus:border-none border-primary border" type="email" placeholder="email@mailinator.com" className="bg-gray-700 border-gray-600 text-white placeholder-gray-400 flex-grow" />
+                                        <Input className="!bg-white outline-0 focus:border-none border-primary border" type="email" placeholder="email@mailinator.com" />
                                         <Button className="!w-fit !px-6 !py-6">
                                             Sign up
                                         </Button>

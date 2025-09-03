@@ -1,6 +1,7 @@
 import React from 'react';
 import { SectionContainer } from '@/components/common/SectionContainer';
 import { Button } from '../../ui/button';
+import Link from 'next/link';
 
 export const CTARideSection = () => {
     return (
@@ -19,7 +20,11 @@ export const CTARideSection = () => {
                         <br />the ride.</h2>
                 </div>
                 <p className="text-[1.375rem] font-medium opacity-90">Let us take the mystery out of financial planning so you can focus on what matters.</p>
-                <div className="flex items-center gap-4"><Button className={''}>Chat with an Advisor</Button><p className="">— Free Consultation</p></div>
+                <div className="flex items-center gap-4">
+                    <Link href={'/contact'}>
+                        <Button className={''}>Chat with an Advisor</Button>
+                    </Link>
+                    <p className="">— Free Consultation</p></div>
             </div>
         </SectionContainer>
     );
